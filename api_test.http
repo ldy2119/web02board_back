@@ -1,0 +1,76 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+GET http://localhost:8080/api/board
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/addPostToHashMap
+Content-Type: application/json
+
+{
+  "userId" : 1,
+  "title" : "asdfafd",
+  "content" : "zczxcvzxcv"
+}
+
+###
+
+PUT http://localhost:8080/api/modifyPost
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "title" : "asdfafd",
+  "content" : "zczxcvzxcv"
+}
+
+###
+
+DELETE http://localhost:8080/api/deletePost/1
+Accept: application/json
+
+
+###
+
+POST http://localhost:8080/api/addUser
+Content-Type: application/json
+
+{
+  "account": "111",
+  "password": "222",
+  "username": "aaa",
+  "email": "sss@ddd"
+}
+
+###
+
+PUT http://localhost:8080/api/modifyUser
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "account": "zxcv",
+  "password": "222",
+  "username": "aaa",
+  "email": "sss@eee"
+}
+
+###
+
+DELETE http://localhost:8080/api/deleteUser/1
+Accept: application/json
+
+
+###
+
+GET http://localhost:8080/api/users
+Accept: application/json
+
+###
+
+##
