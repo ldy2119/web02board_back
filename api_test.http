@@ -31,7 +31,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:8080/api/deletePost/1
+GET http://localhost:8080/api/users
 Accept: application/json
 
 

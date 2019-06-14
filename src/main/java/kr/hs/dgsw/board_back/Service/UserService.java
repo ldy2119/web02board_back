@@ -11,4 +11,5 @@ public interface UserService {
     Long add(User user);
     int modity(User user);
     User findById(Long id);
+    User Login(User user);
 }

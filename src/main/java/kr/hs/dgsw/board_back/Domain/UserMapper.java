@@ -16,4 +16,6 @@ public interface UserMapper {
     Long add(User user);
     int modify(User user);
     User findById(@Param("id") Long id);
+
+    User Login(User user);
 }

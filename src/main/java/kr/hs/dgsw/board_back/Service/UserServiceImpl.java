@@ -37,4 +37,9 @@ public class UserServiceImpl implements UserService {
     public User findById(Long id) {
         return this.userMapper.findById(id);
     }
+
+    @Override
+    public User Login(User user) {
+        return this.userMapper.Login(user);
+    }
 }

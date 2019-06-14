@@ -32,6 +32,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public int modify(Post post) {
+
         return postMapper.modify(post);
     }
 

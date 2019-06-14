@@ -21,4 +21,10 @@
         username=#{username}, email=#{email}
         where id=#{id}
     </update>
+
+    <select id="Login" parameterType="kr.hs.dgsw.board_back.Domain.User" resultType="kr.hs.dgsw.board_back.Domain.User">
+        select id, account, username, email, created, updated
+        from user
+        where account=#{account} and password=#{password}
+    </select>
 </mapper>

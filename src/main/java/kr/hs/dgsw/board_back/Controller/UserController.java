@@ -19,6 +19,12 @@ public class UserController {
         return this.userService.findAll();
     }
 
+    @PostMapping(value = "/api/login")
+    public User Login(@RequestBody User user)
+    {
+        return this.userService.Login(user);
+    }
+
     @PostMapping(value = "/api/addUser")
     public Long addUser(@RequestBody User user)
     {

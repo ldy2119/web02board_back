@@ -20,6 +20,13 @@ public class PostController {
         return postService.findAll();
     }
 
+
+    @GetMapping(value = "/api/board/view/{id}")
+    public Post findPostById(@PathVariable long id)
+    {
+        return postService.findById(id);
+    }
+
     @PostMapping(value = "/api/addPost")
     public Long addPost(@RequestBody Post post)
     {
